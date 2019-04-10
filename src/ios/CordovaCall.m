@@ -39,7 +39,7 @@ BOOL enableDTMF = NO;
 - (void)pluginInitialize
 {
     CXProviderConfiguration *providerConfiguration;
-    appName = [[NSBundle mainBundle] objectForInfoDictionaryKey:@"CFBundleDisplayName"];
+    appName = [[NSBundle mainBundle] objectForInfoDictionaryKey:@"CFBundleName"];
     providerConfiguration = [[CXProviderConfiguration alloc] initWithLocalizedName:appName];
     providerConfiguration.maximumCallGroups = 1;
     providerConfiguration.maximumCallsPerCallGroup = 1;
